@@ -6,9 +6,9 @@
     </tr>
     {% for concert in concerts %}
 	<tr>
-	    <th>concert.venue</th>
-	    <th>concert.title</th>
-	    <th>concert.start_time</th>
+	    <th>{{concert.venue}}</th>
+	    <th>{{concert.title}}</th>
+	    <th>{{concert.start_time}}</th>
 	</tr>
     {% endfor %}
 </table>
