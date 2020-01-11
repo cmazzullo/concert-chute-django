@@ -16,3 +16,6 @@ tests/coverage_html/
 tests/.coverage
 build/
 tests/report/
+
+# Private settings file:
+concert_chute_django/settings/__init__.py
