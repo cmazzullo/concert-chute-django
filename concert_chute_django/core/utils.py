@@ -1,3 +1,4 @@
+from datetime import datetime, timedelta
 from itertools import chain
 
 from django.conf import settings
@@ -96,3 +97,10 @@ def json_to_models(event_json):
 
     concert.venue = venue
     return concert, venue
+
+
+def upcoming_concerts():
+    return Concert.objects.filter(
+        start_time__gte=datetime.now(),
+        start_time__lte=datetime.now() + timedelta(30),
+    )

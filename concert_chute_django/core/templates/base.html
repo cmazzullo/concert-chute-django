@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{% static 'styles.css' %}">
+	<title>
+	    ConcertChute | {% block title %}{% endblock title %}
+	</title>
+    </head>
+
+    <body>
+	<div class="header">
+	    <h1><a href="{% url 'home' %}">ConcertChute</a> Washington, DC</h1>
+	</div>
+	{% block content %}
+	{% endblock content %}
+    </body>
+</html>

@@ -1,14 +1,20 @@
-<table>
-    <tr>
-	<th>Venue</th>
-	<th>Title</th>
-	<th>Start Time</th>
-    </tr>
-    {% for concert in concerts %}
+{% extends 'base.html' %}
+
+{% block title %}Upcoming Shows{% endblock title %}
+
+{% block content %}
+    <table>
 	<tr>
-	    <th>{{concert.venue}}</th>
-	    <th>{{concert.title}}</th>
-	    <th>{{concert.start_time}}</th>
+	    <th>Venue</th>
+	    <th>Title</th>
+	    <th>Start Time</th>
 	</tr>
-    {% endfor %}
-</table>
+	{% for concert in concerts %}
+	    <tr>
+		<td><a href="{% url 'view_venue' concert.venue.pk %}">{{ concert.venue.name }}</a></td>
+		<td>{{concert.title|truncatechars:100}}</td>
+		<td>{{concert.start_time}}</td>
+	    </tr>
+	{% endfor %}
+    </table>
+{% endblock content %}

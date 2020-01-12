@@ -17,7 +17,7 @@ class Command(BaseCommand):
 
     def get_data(self):
         return get_all_query_data({
-            'date': format_daterange(date.today(), date.today() + timedelta(3)),
+            'date': format_daterange(date.today(), date.today() + timedelta(35)),
             **DEFAULT_PARAMS
         })
 

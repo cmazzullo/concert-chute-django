@@ -1,0 +1,28 @@
+.header {
+    background: yellow;
+    color: black;
+    padding: .5rem;
+}
+
+.header>h1 {
+    margin: 0;
+}
+
+.header>h1>a {
+    color: black;
+}
+
+a {
+    color: blue;
+}
+body {
+    margin: 0;
+}
+
+th {
+    text-decoration: underline;
+}
+
+table {
+    border-right: 1px solid black;
+}
