@@ -2,4 +2,5 @@ Django==3.0.2
 pytest==5.3.2
 pytest-django==3.7.0
 requests==2.22.0
-model-bakery=1.0.2
+model-bakery==1.0.2
+psycopg2==2.8.4

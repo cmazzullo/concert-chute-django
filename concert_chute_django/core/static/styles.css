@@ -15,14 +15,11 @@
 a {
     color: blue;
 }
+
 body {
     margin: 0;
 }
 
 th {
     text-decoration: underline;
-}
-
-table {
-    border-right: 1px solid black;
 }
