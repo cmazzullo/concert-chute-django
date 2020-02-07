@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}Upcoming Shows{% endblock title %}
+{% block title %}Upcoming Shows in Washington, DC{% endblock title %}
 
 {% block content %}
     <table>
@@ -12,8 +12,8 @@
 	{% for concert in concerts %}
 	    <tr>
 		<td><a href="{% url 'view_venue' concert.venue.pk %}">{{ concert.venue.name }}</a></td>
-		<td>{{concert.title|truncatechars:100}}</td>
-		<td>{{concert.start_time}}</td>
+		<td>{{ concert.title|truncatechars:100 }}</td>
+		<td nowrap>{{ concert.start_time|date:"D, M d h:i A" }}</td>
 	    </tr>
 	{% endfor %}
     </table>

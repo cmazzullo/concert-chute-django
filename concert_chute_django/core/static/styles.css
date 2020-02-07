@@ -1,16 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .header {
     background: yellow;
     color: black;
-    padding: .5rem;
+    padding: .5rem 1rem;
 }
 
+.header a {
+    color: black;
+}
+
+#credit {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: inline;
+    font-size: .8rem;
+    font-family: courier;
+}
 .header>h1 {
+    display: inline;
     margin: 0;
 }
 
-.header>h1>a {
-    color: black;
-}
 
 a {
     color: blue;
@@ -20,6 +33,17 @@ body {
     margin: 0;
 }
 
+table {
+    border-spacing: 0;
+    width: 100%;
+}
+
 th {
     text-decoration: underline;
+    padding: .2rem;
+    background: #ffa;
+}
+
+td {
+    padding: 0 1rem 0 1rem;
 }
